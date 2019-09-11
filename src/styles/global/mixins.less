@@ -1,0 +1,54 @@
+.clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1580px;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  @media @before-w1170 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @media @before-w768 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.show-block {
+  display: block;
+}
+
+.show-flex {
+  display: flex;
+}
+
+.hide-block {
+  display: none;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.is-ios * {
+  cursor: pointer;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  &::before,
+  &::after {
+    content: '';
+    display: table;
+  }
+}

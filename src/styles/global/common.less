@@ -1,0 +1,104 @@
+html,body {
+  width: 100%; 
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: @bg1;
+  color: @color1;
+  font-weight: 400;
+  font-style: normal;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+.page-header {
+  flex: 0 0 auto;
+  overflow-x: hidden;
+}
+
+.main {
+  flex: 1 0 auto;
+  overflow-x: hidden;
+}
+
+.page-footer {
+  flex: 0 0 auto;
+  overflow-x: hidden;
+}
+
+a {
+  color: @color1;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+textarea,
+button {
+  box-shadow: none;
+  outline: none;
+  color: @color1;
+  font-family: @font1;
+}
+
+button {
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+ &::-webkit-input-placeholder {
+   color: transparent
+ }
+ &::-moz-placeholder {
+   color: transparent
+ }
+ &:-moz-placeholder {
+   color: transparent
+ }
+ &:-ms-input-placeholder {
+   color: transparent
+ }
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+input::-ms-reveal {
+  display: none;
+}
+
+input[type=text],
+input[type=email],
+input[type=submit],
+textarea {
+  -webkit-appearance: none;
+}
+
+input[type="search"] {-webkit-appearance: none; border-radius: 0 0 0 0;}
+
+input,
+textarea,
+button {
+  font-family: @font1;
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}

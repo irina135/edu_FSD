@@ -65,12 +65,16 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .text-sumple_margin {
   margin-bottom: 50px;
+}
+.text-sumple__tag {
+  width: 37px;
+  text-align: right;
 }
 .text-sumple__text {
   width: 336px;
@@ -125,7 +129,7 @@
   line-height: 24px;
   color: #1F2041;
 }
-.text_size12-dark100--uppercase {
+.text_size12-dark100-uppercase {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -134,7 +138,7 @@
   text-transform: uppercase;
   color: #1F2041;
 }
-.text_size15-dark75 {
+.text_size14-dark75 {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;

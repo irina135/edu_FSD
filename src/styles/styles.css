@@ -482,11 +482,45 @@ button {
 * {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-.bluu {
-  color: green;
+@font-face {
+  font-family: Quicksand;
+  src: url("../fonts/quicksand.otf");
+}
+.color-sample {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 270px;
+}
+.color-sample_margin {
+  margin-bottom: 20px;
+}
+.color-sample__picture {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+}
+.color-sample__picture_background-dark100 {
+  background: #1F2041;
+}
+.color-sample__picture_background-dark75 {
+  background: rgba(31, 32, 65, 0.75);
+}
+.color-sample__text {
+  width: 159px;
+}
+.color-sample__text_size {
+  font-family: Quicksand;
+  font-size: 19px;
+  line-height: 29px;
+  color: #1F2041;
+}
+.color-sample__text_size p {
+  margin: 0;
+  padding: 0;
 }
 .text {
-  color: greenyellow;
+  color: red;
 }
 .clearfix::after {
   content: "";

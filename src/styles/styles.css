@@ -12,7 +12,6 @@
   justify-content: space-between;
   align-items: center;
   width: 270px;
-  border: black 1px solid;
 }
 .color-sample_margin {
   margin-bottom: 20px;
@@ -56,8 +55,94 @@
   margin: 0;
   padding: 0;
 }
-.text {
-  color: red;
+.text-sumple {
+  display: flex;
+  justify-content: end;
+}
+.text-sumple_margin {
+  margin-bottom: 50px;
+}
+.text-sumple__text {
+  width: 336px;
+  margin-left: 30px;
+}
+.text_size24-dark25 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: rgba(31, 32, 65, 0.25);
+}
+.text_size19-dark25 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 23px;
+  color: rgba(31, 32, 65, 0.25);
+}
+.text_size12-dark25-uppercase {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.25);
+}
+.text_size14-dark25 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.25);
+}
+.text_size24-dark100 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1F2041;
+}
+.text_size19-dark100 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  color: #1F2041;
+}
+.text_size12-dark100--uppercase {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+}
+.text_size15-dark75 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.tagh1 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #1F2041;
+}
+.reset {
+  margin: 0;
+  padding: 0;
 }
 .colors {
   display: flex;
@@ -65,10 +150,6 @@
   padding-left: 150px;
   padding-top: 145px;
   padding-right: 191px;
-}
-.colors-wrapper {
-  display: flex;
-  justify-content: space-between;
 }
 /*
 @import "global/mixins.less";

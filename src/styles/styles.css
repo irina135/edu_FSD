@@ -60,6 +60,8 @@
   color: red;
 }
 .colors {
+  display: flex;
+  justify-content: space-between;
   padding-left: 150px;
   padding-top: 145px;
   padding-right: 191px;

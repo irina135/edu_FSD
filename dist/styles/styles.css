@@ -158,7 +158,8 @@
   margin: 0;
   padding: 0;
 }
-.colors {
+.colors_wrapper {
+  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -168,6 +169,25 @@
   padding-left: 150px;
   padding-top: 145px;
   padding-right: 191px;
+}
+.logo {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: rgba(31, 32, 65, 0.25) 3px solid;
+}
+.logo__img-left_position {
+  position: absolute;
+  left: 11px;
+  top: 18px;
+}
+.logo__img-right_position {
+  position: absolute;
+  left: 25px;
+  top: 18px;
 }
 /*
 @import "global/mixins.less";

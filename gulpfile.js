@@ -139,7 +139,7 @@ gulp.task('serv', function() {
   gulp.watch('src/html/**/*.less', ['style']);
   gulp.watch('src/scripts-ready/**/*.js', ['js-copy']);
   gulp.watch('src/scripts/**/*.js', ['uglifyes']);
-  gulp.watch('src/assets/images/**/*.{png,jpg,jpeg,gif,svg}', ['images']);
+  gulp.watch('src/assets/logo/**/*.{png,jpg,jpeg,gif,svg}', ['images']);
   gulp.watch('src/assets/icons/svg-sprite/*.svg', ['symbols']);
   gulp.watch('dist/**/*.*', ['reload-serv']);
 });

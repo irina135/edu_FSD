@@ -3,10 +3,6 @@
 @import "global/variables.less";
 @import "global/common.less";
 @import "global/svg-colors.less";*/
-@font-face {
-  font-family: Quicksand;
-  src: url("../fonts/quicksand.otf");
-}
 .color-sample {
   display: flex;
   justify-content: space-between;
@@ -213,6 +209,100 @@
   position: absolute;
   left: 25px;
   top: 18px;
+}
+* {
+  box-sizing: border-box;
+}
+.text-field {
+  width: 320px;
+  height: 44px;
+  border-radius: 4px;
+  padding-left: 15px;
+  outline: none;
+  border: rgba(31, 32, 65, 0.25) 1px solid;
+}
+.text-field:focus {
+  border: rgba(31, 32, 65, 0.5) 1px solid;
+}
+.text-field:hover {
+  border: rgba(31, 32, 65, 0.5) 1px solid;
+}
+::-webkit-input-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+  font-size: 14px;
+  line-height: 18px;
+}
+::-moz-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+  font-size: 14px;
+  line-height: 18px;
+}
+:-moz-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+  font-size: 14px;
+  line-height: 18px;
+}
+:-ms-input-placeholder {
+  color: rgba(31, 32, 65, 0.25);
+  font-size: 14px;
+  line-height: 18px;
+}
+* {
+  box-sizing: border-box;
+}
+.text-field-hover {
+  width: 320px;
+  height: 44px;
+  border-radius: 4px;
+  padding-left: 15px;
+  outline: none;
+  border: rgba(31, 32, 65, 0.5) 1px solid;
+}
+* {
+  box-sizing: border-box;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+.dropdown-guest {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  height: 44px;
+  padding-left: 15px;
+  border: rgba(31, 32, 65, 0.25) 1px solid;
+  border-radius: 4px;
+}
+.dropdown-guest__text {
+  padding-top: 8px;
+}
+.dropdown-guest__text p {
+  margin: 0;
+  padding: 0;
+}
+.dropdown-guest__btn {
+  width: 44px;
+  height: 42px;
+  align-items: center;
+  text-align: center;
+  background: none;
+  border: none;
+}
+button:focus {
+  outline: none;
+}
+.elements-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.elements-tittle-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.elements-column-left {
+  width: 320px;
 }
 /*
 @import "global/mixins.less";

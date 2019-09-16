@@ -54,6 +54,20 @@ h6 {
 .text-field:hover {
   border: rgba(31, 32, 65, 0.5) 1px solid;
 }
+.text-field_width266 {
+  width: 266px;
+  height: 44px;
+  border-radius: 4px;
+  padding-left: 15px;
+  outline: none;
+  border: rgba(31, 32, 65, 0.25) 1px solid;
+}
+.text-field_width266:hover {
+  border: rgba(31, 32, 65, 0.5) 1px solid;
+}
+.text-field_width266:focus {
+  border: rgba(31, 32, 65, 0.5) 1px solid;
+}
 .color-sample {
   display: flex;
   justify-content: space-between;
@@ -301,15 +315,14 @@ button:focus {
 .dropdown__btn-margin {
   margin-left: -44px;
 }
-.drobdown-date-filter__text_width {
-  width: 266px;
-  /*height: 44px;
-  border: @dark25 1px solid;
-  border-radius: 4px;
-  padding-left: 15px;*/
-}
 .drobdown-date-filter__text_margin {
   padding-top: 8px;
+}
+.text-email__text_margin {
+  padding-top: 8px;
+}
+.text-email__btn {
+  margin-left: -44px;
 }
 /*
 @import "global/mixins.less";

@@ -188,6 +188,26 @@
   left: 25px;
   top: 18px;
 }
+.elements-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.elements-tittle-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.elements-column-left {
+  width: 320px;
+}
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -200,31 +220,35 @@
   outline: none;
   border: rgba(31, 32, 65, 0.25) 1px solid;
 }
-.text-field:focus {
-  border: rgba(31, 32, 65, 0.5) 1px solid;
-}
-.text-field:hover {
-  border: rgba(31, 32, 65, 0.5) 1px solid;
-}
 ::-webkit-input-placeholder {
+  text-transform: uppercase;
   color: rgba(31, 32, 65, 0.25);
   font-size: 14px;
   line-height: 18px;
 }
 ::-moz-placeholder {
+  text-transform: uppercase;
   color: rgba(31, 32, 65, 0.25);
   font-size: 14px;
   line-height: 18px;
 }
 :-moz-placeholder {
+  text-transform: uppercase;
   color: rgba(31, 32, 65, 0.25);
   font-size: 14px;
   line-height: 18px;
 }
 :-ms-input-placeholder {
+  text-transform: uppercase;
   color: rgba(31, 32, 65, 0.25);
   font-size: 14px;
   line-height: 18px;
+}
+.text-field:focus {
+  border: rgba(31, 32, 65, 0.5) 1px solid;
+}
+.text-field:hover {
+  border: rgba(31, 32, 65, 0.5) 1px solid;
 }
 * {
   -webkit-box-sizing: border-box;
@@ -279,25 +303,23 @@ p {
 button:focus {
   outline: none;
 }
-.elements-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
-.elements-tittle-wrapper {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.elements-column-left {
+.text-field {
   width: 320px;
+  height: 44px;
+  border-radius: 4px;
+  padding-left: 15px;
+  outline: none;
+  border: rgba(31, 32, 65, 0.25) 1px solid;
+}
+.text-field:focus {
+  border: rgba(31, 32, 65, 0.5) 1px solid;
+}
+.text-field:hover {
+  border: rgba(31, 32, 65, 0.5) 1px solid;
 }
 /*
 @import "global/mixins.less";

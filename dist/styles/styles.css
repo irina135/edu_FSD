@@ -73,6 +73,21 @@ h6 {
 .text-field_width266:focus {
   border: rgba(31, 32, 65, 0.5) 1px solid;
 }
+.btn-plus-minus {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: rgba(31, 32, 65, 0.25) 1px solid;
+  color: rgba(31, 32, 65, 0.5);
+}
+.textDark100 {
+  color: #1F2041;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+}
 .color-sample {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -253,6 +268,11 @@ h6 {
   margin-bottom: 5px;
   margin-top: 22.5px;
 }
+.elements-tittle-wrapper_size266 {
+  width: 266px;
+  margin-bottom: 5px;
+  margin-top: 22.5px;
+}
 .elements-column-left {
   width: 320px;
 }
@@ -269,7 +289,29 @@ h6 {
   outline: none;
   border: rgba(31, 32, 65, 0.5) 1px solid;
 }
-.dropdown-guest__text {
+.drobdown {
+  height: 44px;
+  border-radius: 4px;
+  padding-left: 15px;
+  outline: none;
+  border: rgba(31, 32, 65, 0.25) 1px solid;
+}
+.drobdown:hover {
+  border: rgba(31, 32, 65, 0.5) 1px solid;
+}
+.drobdown:focus {
+  border: rgba(31, 32, 65, 0.5) 1px solid;
+}
+.drobdown_wigth320 {
+  width: 320px;
+}
+.drobdown_wigth266 {
+  width: 266px;
+}
+.drobdown_wigth150 {
+  width: 150px;
+}
+.dropdown__text_padding {
   padding-top: 8px;
 }
 .dropdown__btn {
@@ -282,22 +324,48 @@ h6 {
   background: none;
   border: none;
 }
-button:focus {
-  outline: none;
-}
-.drobdown-date__text {
-  width: 150px;
-  height: 44px;
-  padding-top: 8px;
-  border: rgba(31, 32, 65, 0.25) 1px solid;
-  border-radius: 4px;
-  padding-left: 15px;
-}
 .dropdown__btn-margin {
   margin-left: -44px;
 }
-.drobdown-date-filter__text_margin {
-  padding-top: 8px;
+button:focus {
+  outline: none;
+}
+.dropdown_radius-bottom {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.dropdown-expended__container {
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border: rgba(31, 32, 65, 0.5) 1px solid;
+  border-top: none;
+  padding: 7px 7px 0 15px;
+}
+.dropdown-expended__container_height119 {
+  height: 119px;
+}
+.dropdown-expended__container_width266 {
+  width: 266px;
+}
+.dropdown-expended_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 7px;
+}
+.dropdown-expended__view {
+  width: 152px;
+}
+.summ {
+  text-transform: uppercase;
 }
 .text-email__btn_margin {
   margin-left: -46px;

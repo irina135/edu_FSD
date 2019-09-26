@@ -9,3 +9,57 @@
   }
 
 })();
+	function fmunus1() {
+		var munus1=0;
+		$('#btn-plus-room-1').on('click',function () {
+			munus1=munus1+1;
+			$('#room-summ-1').html(munus1);
+			$('#bedroom').html(munus1+'спальни');
+        });
+		$('#btn-minus-room-1').on('click',function () {
+			munus1=munus1-1;
+			if (munus1>0){
+				$('#room-summ-1').html(munus1);
+			}
+			else {
+				munus1=0;
+				$('#room-summ-1').html(munus1);
+			}
+			$('#bedroom').html(munus1+'спальни');
+        });
+		var munus2=0;
+		$('#btn-plus-room-2').on('click',function () {
+			munus2=munus2+1;
+			$('#room-summ-2').html(munus2);
+			$('#bedroom').html(munus2+'кровати');
+        });
+		$('#btn-minus-room-2').on('click',function () {
+			munus2=munus2-1;
+			if (munus2>0){
+				$('#room-summ-2').html(munus2);
+			}
+			else {
+				munus2=0;
+				$('#room-summ-2').html(munus2);
+			}
+			$('#bedroom').html(munus2+'кровати');
+        });
+		var munus3=0;
+		$('#btn-plus-room-3').on('click',function () {
+			munus3=munus3+1;
+			$('#room-summ-3').html(munus3);
+			$('#bedroom').html(munus3+'ванные');
+        });
+		$('#btn-minus-room-3').on('click',function () {
+			munus3=munus3-1;
+			if (munus3>0){
+				$('#room-summ-3').html(munus3);
+			}
+			else {
+				munus3=0;
+				$('#room-summ-3').html(munus3);
+			}
+			$('#bedroom').html(munus3+'ванные');
+        });
+    };
+	fmunus1();

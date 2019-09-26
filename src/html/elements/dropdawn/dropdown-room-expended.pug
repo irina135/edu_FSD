@@ -1,0 +1,47 @@
+doctype
+html(lang="ru")
+  head
+      body
+          .display-flex.drobdown.drobdown_wigth266.dropdown_radius-bottom
+              .dropdown__text_padding
+                  p.text_size14-dark75(id='bedroom') 2 спальни, 2 кровати...
+              button.dropdown__btn
+                  img(src='assets/images/elements/dropdown-arrow.png')
+          .dropdown-expended__container.dropdown-expended__container_height119.dropdown-expended__container_width266
+              .dropdown-expended_wrapper
+                  .dropdown-expended__view
+                      p.textDark100 спальни
+                  .btn-plus-minus-container
+                      button(type=button class='btn-plus-minus' id='btn-minus-room-1')
+                          p &ndash;
+                  .summ
+                      p.textDark100(id='room-summ-1') 1
+                  .btn-plus-minus-container
+                      button(type=button class='btn-plus-minus' id='btn-plus-room-1')
+                          img(src='assets/images/elements/plus.png')
+              .dropdown-expended_wrapper
+                  .dropdown-expended__view
+                      p.textDark100 кровати
+                  .btn-plus-minus-container
+                      button(type=button class='btn-plus-minus' id='btn-minus-room-2')
+                          p &ndash;
+                  .summ
+                      p.textDark100(id='room-summ-2') 1
+                  .btn-plus-minus-container
+                      button(type=button class='btn-plus-minus' id='btn-plus-room-2')
+                          img(src='assets/images/elements/plus.png')
+              .dropdown-expended_wrapper
+                  .dropdown-expended__view
+                      p.textDark100 ванные
+                  .btn-plus-minus-container
+                      button(type=button class='btn-plus-minus' id='btn-minus-room-3')
+                          p &ndash;
+                  .summ
+                      p.textDark100(id='room-summ-3') 1
+                  .btn-plus-minus-container
+                      button(type=button class='btn-plus-minus' id='btn-plus-room-3')
+                          img(src='assets/images/elements/plus.png')
+          script(src='scripts/main.js')
+          script(src='scripts/jquery-3.3.1.min.js')
+
+

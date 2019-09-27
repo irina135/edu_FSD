@@ -66,6 +66,11 @@
 	function checkbox() {
 		$('#checkbox-btn').on('click',function () {
            $('.checkbox__button-wrapper').toggleClass('checkbox-display-none ');
-        })
+            var src = ($('#checkbox-arrow').attr("src") === "assets/images/elements/dropdown-arrow.png")
+                    ? "assets/images/elements/arrow-up.png"
+                    : "assets/images/elements/dropdown-arrow.png";
+      $('#checkbox-arrow').attr("src", src);
+        });
     };
-	checkbox()
+	checkbox();
+

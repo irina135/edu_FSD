@@ -293,9 +293,6 @@ h6 {
 .drobdown__span_padding {
   padding-right: 5px;
 }
-.dropdown__text_padding {
-  padding-top: 0;
-}
 .dropdown__btn {
   width: 44px;
   height: 42px;
@@ -380,8 +377,22 @@ button:focus {
 .text-email-wrapper-size {
   width: 222px;
 }
-.checkbox_width {
+.checkbox__tittle {
   width: 266px;
+  margin-bottom: 7px;
+}
+.checkbox__button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+.chbrn {
+  width: 20px;
+  height: 20px;
+  background: red;
 }
 /*
 @import "global/mixins.less";

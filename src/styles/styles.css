@@ -39,6 +39,7 @@ h6 {
 .display-flex {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .btn-plus-minus {
   width: 30px;
@@ -274,6 +275,10 @@ h6 {
   width: 160px;
   text-align: left;
 }
+.elements__checkbox-list {
+  padding-top: 54px;
+  padding-bottom: 49px;
+}
 .drobdown {
   height: 44px;
   border-radius: 4px;
@@ -301,14 +306,13 @@ h6 {
   width: 160px;
   white-space: nowrap;
   overflow: hidden;
-  background: #fc0;
   text-overflow: ellipsis;
 }
 .drobdown__span_padding {
   padding-right: 5px;
 }
 .dropdown__text_padding {
-  padding-top: 8px;
+  padding-top: 0;
 }
 .dropdown__btn {
   width: 44px;
@@ -385,6 +389,9 @@ button:focus {
 }
 .text-email-wrapper-size {
   width: 222px;
+}
+.checkbox_width {
+  width: 266px;
 }
 /*
 @import "global/mixins.less";

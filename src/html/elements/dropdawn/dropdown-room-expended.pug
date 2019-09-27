@@ -4,7 +4,13 @@ html(lang="ru")
       body
           .display-flex.drobdown.drobdown_wigth266.dropdown_radius-bottom
               .dropdown__text_padding
-                  p.text_size14-dark75(id='bedroom') 2 спальни, 2 кровати...
+                  p.text_size14-dark75.drobdown__text_overflow
+                      span.drobdown__span_padding(id='bedroom') 2
+                      span.drobdown__span_padding спальни,
+                      span.drobdown__span_padding(id='bed') 2
+                      span.drobdown__span_padding кровати,
+                      span.drobdown__span_padding(id='bathroom') 2
+                      span.drobdown__span_padding ванные комнаты,
               button.dropdown__btn
                   img(src='assets/images/elements/dropdown-arrow.png')
           .dropdown-expended__container.dropdown-expended__container_height119.dropdown-expended__container_width266

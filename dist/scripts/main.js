@@ -14,7 +14,7 @@
 		$('#btn-plus-room-1').on('click',function () {
 			munus1=munus1+1;
 			$('#room-summ-1').html(munus1);
-			$('#bedroom').html(munus1+'спальни');
+			$('#bedroom').html(munus1);
         });
 		$('#btn-minus-room-1').on('click',function () {
 			munus1=munus1-1;
@@ -25,13 +25,13 @@
 				munus1=0;
 				$('#room-summ-1').html(munus1);
 			}
-			$('#bedroom').html(munus1+'спальни');
+			$('#bedroom').html(munus1);
         });
 		var munus2=0;
 		$('#btn-plus-room-2').on('click',function () {
 			munus2=munus2+1;
 			$('#room-summ-2').html(munus2);
-			$('#bedroom').html(munus2+'кровати');
+			$('#bed').html(munus2);
         });
 		$('#btn-minus-room-2').on('click',function () {
 			munus2=munus2-1;
@@ -42,13 +42,13 @@
 				munus2=0;
 				$('#room-summ-2').html(munus2);
 			}
-			$('#bedroom').html(munus2+'кровати');
+			$('#bed').html(munus2);
         });
 		var munus3=0;
 		$('#btn-plus-room-3').on('click',function () {
 			munus3=munus3+1;
 			$('#room-summ-3').html(munus3);
-			$('#bedroom').html(munus3+'ванные');
+			$('#bathroom').html(munus3);
         });
 		$('#btn-minus-room-3').on('click',function () {
 			munus3=munus3-1;
@@ -59,7 +59,7 @@
 				munus3=0;
 				$('#room-summ-3').html(munus3);
 			}
-			$('#bedroom').html(munus3+'ванные');
+			$('#bathroom').html(munus3);
         });
     };
 	fmunus1();

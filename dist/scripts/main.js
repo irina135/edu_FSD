@@ -63,3 +63,9 @@
         });
     };
 	fmunus1();
+	function checkbox() {
+		$('#checkbox-btn').on('click',function () {
+           $('.checkbox__button-wrapper').toggleClass('checkbox-display-none ');
+        })
+    };
+	checkbox()

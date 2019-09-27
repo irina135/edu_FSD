@@ -400,6 +400,9 @@ button:focus {
   height: 20px;
   background: red;
 }
+.checkbox-display-none {
+  display: none;
+}
 /*
 @import "global/mixins.less";
 @import "global/animations.less";*/

@@ -64,7 +64,7 @@
     };
 	fmunus1();
 	function checkbox() {
-		$('#checkbox-btn').on('click',function () {
+		$('#checkbox-list-btn').on('click',function () {
            $('.checkbox__button-wrapper').toggleClass('checkbox-display-none ');
             var src = ($('#checkbox-arrow').attr("src") === "assets/images/elements/dropdown-arrow.png")
                     ? "assets/images/elements/arrow-up.png"
@@ -72,5 +72,5 @@
       $('#checkbox-arrow').attr("src", src);
         });
     };
-	checkbox()
+	checkbox();
 

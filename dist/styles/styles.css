@@ -444,11 +444,26 @@ input[type='checkbox']:checked + label:after {
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-.checkbox-btn-small__text {
+.checkbox-btn-small__text,
+.checkbox-btn-big__tittle {
   width: 192px;
   padding: 0;
   color: rgba(31, 32, 65, 0.5);
   font-size: 14px;
+  line-height: 18px;
+}
+.checkbox-btn-big__tittle {
+  width: 236px;
+  color: rgba(31, 32, 65, 0.75);
+  font-weight: bold;
+}
+.checkbox-btn-big__text {
+  width: 236px;
+  margin-left: 30px;
+  margin-top: 5px;
+  color: rgba(31, 32, 65, 0.5);
+  font-size: 12px;
+  line-height: 14px;
 }
 /*
 @import "global/mixins.less";

@@ -396,10 +396,6 @@ button:focus {
   width: 266px;
   margin-bottom: 7px;
 }
-.checkbox__button-wrapper {
-  display: flex;
-  justify-content: start;
-}
 .chbrn {
   width: 20px;
   height: 20px;
@@ -409,6 +405,9 @@ button:focus {
   display: none;
 }
 /*checkbox-btn*/
+.checkbox-btn-small_margin-bottom {
+  margin-bottom: 12px;
+}
 input[type='checkbox']:checked,
 input[type='checkbox']:not(:checked) {
   position: absolute;
@@ -456,6 +455,7 @@ input[type='checkbox']:checked + label:after {
   transform: rotate(-45deg);
 }
 .checkbox-btn-small__text {
+  width: 192px;
   padding: 0;
   color: rgba(31, 32, 65, 0.5);
   font-size: 14px;

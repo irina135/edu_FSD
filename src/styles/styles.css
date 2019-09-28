@@ -408,6 +408,58 @@ button:focus {
 .checkbox-display-none {
   display: none;
 }
+/*checkbox-btn*/
+input[type='checkbox']:checked,
+input[type='checkbox']:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+input[type='checkbox']:checked + label,
+input[type='checkbox']:not(:checked) + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+}
+input[type='checkbox']:not(:checked) + label:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: '';
+  width: 20px;
+  height: 20px;
+  border: rgba(31, 32, 65, 0.25) 1px solid;
+  border-radius: 4px;
+}
+input[type='checkbox']:checked + label:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: '';
+  width: 20px;
+  height: 20px;
+  border: #BC9CFF 1px solid;
+  border-radius: 4px;
+}
+input[type='checkbox']:checked + label:after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 6px;
+  border-bottom: #BC9CFF 1px solid;
+  border-left: #BC9CFF 1px solid;
+  left: 8px;
+  top: 5px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.checkbox-btn-small__text {
+  padding: 0;
+  color: rgba(31, 32, 65, 0.5);
+  font-size: 14px;
+}
 /*
 @import "global/mixins.less";
 @import "global/animations.less";*/

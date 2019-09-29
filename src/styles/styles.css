@@ -460,7 +460,7 @@ input[type='checkbox']:checked + label:after {
   padding: 0;
   color: rgba(31, 32, 65, 0.5);
   font-size: 14px;
-  line-height: 18px;
+  line-height: 22px;
 }
 .checkbox-btn-big__tittle {
   width: 236px;
@@ -474,6 +474,57 @@ input[type='checkbox']:checked + label:after {
   color: rgba(31, 32, 65, 0.5);
   font-size: 12px;
   line-height: 14px;
+}
+.radio-btn_wrapper {
+  display: flex;
+  width: 320px;
+  justify-content: start;
+}
+.radio-btn_container {
+  width: auto;
+  align-items: center;
+}
+input[type='radio']:checked,
+input[type='radio'] {
+  position: absolute;
+  left: -9999px;
+}
+input[type='radio']:checked + label,
+input[type='radio']:not(:checked) + label {
+  position: relative;
+  display: inline-block;
+  padding-left: 30px;
+}
+input[type='radio']:checked + label:before,
+input[type='radio']:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: #BC9CFF 1px solid;
+  border-radius: 100%;
+}
+input[type='radio']:checked + label:after,
+input[type='radio']:not(:checked) + label:after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 4px;
+  left: 4px;
+  border-radius: 100%;
+  background: #BC9CFF;
+}
+input[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+}
+input[type="radio"]:checked + label:after {
+  opacity: 1;
+}
+.radio-btn__label_mardin {
+  margin-right: 20px;
 }
 /*
 @import "global/mixins.less";

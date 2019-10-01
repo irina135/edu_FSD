@@ -471,6 +471,7 @@ input[type='checkbox']:checked + label:after {
   font-size: 12px;
   line-height: 14px;
 }
+/*radio-btn*/
 .radio-btn_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -562,6 +563,45 @@ input[type="radio"]:checked + label:after {
 }
 .toggle-btn_color-passive {
   border: rgba(31, 32, 65, 0.25) 1px solid;
+}
+/*like-btn*/
+.like-btn {
+  width: 40px;
+  height: 20px;
+  border-radius: 10px;
+  padding-left: 5px;
+}
+.like-btn_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.like-btn_color-active {
+  border: #BC9CFF 1px solid;
+}
+.like-btn_color-passive {
+  border: rgba(31, 32, 65, 0.25) 1px solid;
+}
+.like-btn__img-active {
+  color: #BC9CFF;
+  margin-right: 5px;
+}
+.like-btn__text {
+  font-size: 10px;
+}
+.like-btn-active__text_color {
+  color: #BC9CFF;
+}
+.like-btn-active__text_color {
+  color: rgba(31, 32, 65, 0.25);
+}
+.like-btn__img-passive {
+  color: rgba(31, 32, 65, 0.25);
+  margin-right: 5px;
 }
 /*
 @import "global/mixins.less";

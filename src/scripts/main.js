@@ -84,4 +84,15 @@
         });
     };
 	toggle();
+	function like() {
+		var iLike = 0;
+		$('#like-btn-passive').on('click',function () {
+			$('#like-btn-active').toggleClass('oll-display-none');
+			$('#like-btn-passive').toggleClass('oll-display-none');
+			var likeSum = iLike+1;
+			$('.like-btn__text').html(likeSum);
+        });
+    }
+    like();
+
 

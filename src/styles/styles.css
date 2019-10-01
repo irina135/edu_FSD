@@ -16,6 +16,9 @@ h6 {
   margin: 0;
   padding: 0;
 }
+button {
+  padding: 0;
+}
 ::-webkit-input-placeholder {
   color: rgba(31, 32, 65, 0.25);
   font-size: 14px;
@@ -55,6 +58,9 @@ h6 {
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
+}
+.oll-display-none {
+  display: none;
 }
 .color-sample {
   display: flex;
@@ -525,6 +531,38 @@ input[type="radio"]:checked + label:after {
 }
 .radio-btn__label_mardin {
   margin-right: 20px;
+}
+/*toggle-btn__label*/
+.toggle-btn-wrapper_active,
+.toggle-btn-wrapper_passive {
+  width: 260px;
+  display: flex;
+  align-items: center;
+}
+.toggle-btn {
+  width: 40px;
+  height: 20px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.toggle-btn_color-active {
+  border: #BC9CFF 1px solid;
+}
+.toggle-btn__toddle {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+}
+.toggle-btn__toddle_active {
+  background: #bc9cff;
+  margin-left: 24px;
+}
+.toggle-btn__toddle_passive {
+  background: rgba(31, 32, 65, 0.25);
+  margin-left: 4px;
+}
+.toggle-btn_color-passive {
+  border: rgba(31, 32, 65, 0.25) 1px solid;
 }
 /*
 @import "global/mixins.less";

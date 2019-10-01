@@ -65,7 +65,7 @@
 	fmunus1();
 	function checkbox() {
 		$('#checkbox-list-btn').on('click',function () {
-           $('.checkbox__button-wrapper').toggleClass('checkbox-display-none ');
+           $('.checkbox__button-wrapper').toggleClass('checkbox-display-none');
             var src = ($('#checkbox-arrow').attr("src") === "assets/images/elements/dropdown-arrow.png")
                     ? "assets/images/elements/arrow-up.png"
                     : "assets/images/elements/dropdown-arrow.png";
@@ -73,4 +73,11 @@
         });
     };
 	checkbox();
+	function toggle() {
+		$('#toggle-btn-active').on('click',function () {
+			$('.toggle-btn-wrapper_active').toggleClass('oll-display-none');
+			$('#toggle-btn-passive').toggleClass('oll-display-none');
+        });
+    };
+	toggle();
 

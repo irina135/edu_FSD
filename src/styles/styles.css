@@ -599,6 +599,16 @@ input[type="radio"]:checked + label:after {
   color: rgba(31, 32, 65, 0.25);
   margin-right: 5px;
 }
+/*rate-btn*/
+.rate-btn-wrapper {
+  display: flex;
+  width: 120px;
+}
+.rate-btn__img {
+  color: #BC9CFF;
+  margin-right: 2px;
+  margin-left: 2px;
+}
 /*
 @import "global/mixins.less";
 @import "global/animations.less";*/

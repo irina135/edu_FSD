@@ -76,7 +76,11 @@
 	function toggle() {
 		$('#toggle-btn-active').on('click',function () {
 			$('.toggle-btn-wrapper_active').toggleClass('oll-display-none');
-			$('#toggle-btn-passive').toggleClass('oll-display-none');
+			$('.toggle-btn-wrapper_passive').toggleClass('oll-display-none');
+        });
+		$('#toggle-btn-passive').on('click',function () {
+			$('.toggle-btn-wrapper_active').toggleClass('oll-display-none');
+			$('.toggle-btn-wrapper_passive').toggleClass('oll-display-none');
         });
     };
 	toggle();

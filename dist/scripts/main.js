@@ -9,7 +9,13 @@
   }
 
 })();
-	function fmunus1() {
+    function dropdownRoomBtnNone() {
+		$('#dropdown__btn-room_none').on('click',function () {
+			$('.drobdown-room-none').toggleClass('oll-display-none');
+        })
+    }
+    dropdownRoomBtnNone();
+	function fmunusRoom() {
 		var munus1=0;
 		$('#btn-plus-room-1').on('click',function () {
 			munus1=munus1+1;
@@ -62,7 +68,90 @@
 			$('#bathroom').html(munus3);
         });
     };
-	fmunus1();
+	fmunusRoom();
+    var sumGuest1,
+		sumGuest2,
+		sumGuest3,
+		ollSumGuest;
+	function fminusGuest() {
+        var minuGuest1 = 0;
+		$('#btn-plus-guest-1').on('click',function () {
+           minuGuest1 = minuGuest1+1;
+
+           $('#guest-summ-1').html(minuGuest1);
+        });
+		$('#btn-minus-guest1').on('click',function () {
+			minuGuest1 = minuGuest1-1;
+
+			if (minuGuest1>0){
+				$('#guest-summ-1').html(minuGuest1);
+			}
+			else  {
+				minuGuest1=0;
+				$('#guest-summ-1').html(minuGuest1);
+			}
+        });
+		 var minuGuest2 = 0;
+		$('#btn-plus-guest-2').on('click',function () {
+           minuGuest2 = minuGuest2+1;
+
+           $('#guest-summ-2').html(minuGuest2);
+        });
+		$('#btn-minus-guest2').on('click',function () {
+			minuGuest2 = minuGuest2-1;
+
+			if (minuGuest2>0){
+				$('#guest-summ-2').html(minuGuest2);
+			}
+			else  {
+				minuGuest2=0;
+				$('#guest-summ-2').html(minuGuest2);
+			}
+        });
+		 var minuGuest3 = 0;
+		$('#btn-plus-guest-3').on('click',function () {
+           minuGuest3 = minuGuest3+1;
+
+           $('#guest-summ-3').html(minuGuest3);
+        });
+		$('#btn-minus-guest3').on('click',function () {
+			minuGuest3 = minuGuest3-1;
+
+			if (minuGuest3>0){
+				$('#guest-summ-3').html(minuGuest3);
+			}
+			else  {
+				minuGuest3=0;
+				$('#guest-summ-3').html(minuGuest3);
+			}
+        });
+		$('#apply').on('click',function () {
+			$('#dropdown-guest__clear').toggleClass('oll-display-none');
+			 sumGuest1 = $('#guest-summ-1').text();
+			 sumGuest2 = $('#guest-summ-2').text();
+			 sumGuest3 = $('#guest-summ-3').text();
+			 ollSumGuest = +sumGuest1 + +sumGuest2 + +sumGuest3;
+			 $('#guest-sum').html('гостей: ' + ollSumGuest);
+        });
+		$('#clear').on('click',function () {
+			$('#dropdown-guest__clear').toggleClass('oll-display-none');
+			sumGuest1 = 0;
+			$('#guest-summ-1').html(sumGuest1);
+			sumGuest2 = 0;
+			$('#guest-summ-2').html(sumGuest2);
+			sumGuest3 = 0;
+			$('#guest-summ-3').html(sumGuest3);
+			$('#guest-sum').html('Сколько гостей');
+        });
+    }
+    fminusGuest();
+
+	function dropdownGuestBtnNone() {
+		$('#dropdown__btn-guest_none').on('click',function () {
+			$('.drobdown-guest-none').toggleClass('oll-display-none');
+        });
+    };
+    dropdownGuestBtnNone();
 	function checkbox() {
 		$('#checkbox-list-btn').on('click',function () {
            $('.checkbox__button-wrapper').toggleClass('checkbox-display-none');
@@ -87,8 +176,8 @@
 	function like() {
 		var iLike = 0;
 		$('#like-btn-passive').on('click',function () {
-			$('#like-btn-active').toggleClass('oll-display-none');
-			$('#like-btn-passive').toggleClass('oll-display-none');
+			$('#like-btn-active').removeClass('oll-display-none');
+			$('#like-btn-passive').addClass('oll-display-none');
 			var likeSum = iLike+1;
 			$('.like-btn__text').html(likeSum);
         });
@@ -169,5 +258,6 @@
         });
     }
     rate5();
+
 
 

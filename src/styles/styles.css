@@ -293,6 +293,13 @@ button {
   padding-top: 54px;
   padding-bottom: 49px;
 }
+.btn-click-wrapper {
+  width: 217px;
+  margin-bottom: 30px;
+}
+.btn-click-text-wrapper {
+  width: 142px;
+}
 .drobdown {
   height: 44px;
   border-radius: 4px;
@@ -634,6 +641,84 @@ input[type="radio"]:checked + label:after {
   color: #BC9CFF;
   margin-right: 2px;
   margin-left: 2px;
+}
+.btn-click {
+  width: 99px;
+  height: 44px;
+  border-radius: 22px;
+  text-align: center;
+}
+.btn-click_background {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+.btn-click__text {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.btn-click__text_color-white {
+  color: white;
+}
+.btn-click__text_color-purle {
+  color: #BC9CFF;
+}
+.btn-click__text_color-dark {
+  color: rgba(31, 32, 65, 0.5);
+}
+.btn-click_background-opacity {
+  opacity: 0.5;
+}
+.grounded-radiants {
+  position: relative;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  border-radius: 22px;
+}
+.grounded-radiants::after {
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  content: '';
+  z-index: -1;
+  border-radius: 22px;
+  opacity: 0.5;
+}
+.grounded-radiants-opacity {
+  position: relative;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  border-radius: 22px;
+}
+.grounded-radiants-opacity::after {
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  content: '';
+  z-index: -1;
+  border-radius: 22px;
+  opacity: 0.5;
+}
+.btn-click-payment-width {
+  width: 320px;
+}
+.btn-click-payment-position {
+  position: relative;
+}
+.btn-payment__img {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  padding-top: 10px;
+  right: 0;
+  top: 0;
 }
 /*
 @import "global/mixins.less";

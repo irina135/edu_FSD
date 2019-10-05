@@ -720,6 +720,69 @@ input[type="radio"]:checked + label:after {
   right: 0;
   top: 0;
 }
+.carousel {
+  max-width: 500px;
+  /* ширина всего блока */
+  margin: 50px auto;
+  width: 100%;
+}
+.carousel-wrapper {
+  margin: 10px 30px;
+  /* отступы для стрелок */
+  overflow: hidden;
+  /* скрываем содержимое, выходящее за рамки основной области */
+  position: relative;
+}
+.carousel-items {
+  display: flex;
+  width: 10000px;
+  /* устанавливаем большую ширину для набора элементов */
+  position: relative;
+  /* позиционируем блок относительно основной области карусели */
+}
+.carousel-block {
+  display: flex;
+  /*float: left;*/
+  /* выстраиваем все элементы карусели в ряд */
+  width: 100px;
+  /* задаём ширину каждого элемента */
+  padding: 10px 10px 10px 0px;
+  /* делаем оступы, чтобы элементы не сливались */
+}
+.carousel-block img {
+  display: block;
+}
+.carousel-button-left a,
+.carousel-button-right a {
+  width: 25px;
+  height: 36px;
+  position: relative;
+  top: 80px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.carousel-button-left a {
+  float: left;
+}
+.carousel-button-right a {
+  float: right;
+}
+.advantage-wrapper {
+  width: 280px;
+  height: 88px;
+  border-bottom: red 1px solid;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.advantage-img-wrapper {
+  width: 48px;
+  margin-right: 10px;
+  padding-left: 5px;
+}
+.advantage__tittle_bold {
+  font-weight: bold;
+}
 /*
 @import "global/mixins.less";
 @import "global/animations.less";*/

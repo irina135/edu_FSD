@@ -786,7 +786,7 @@ input[type="radio"]:checked + label:after {
 .carousel-button-right a {
   float: right;
 }
-.IconTextList__wrapper {
+.Icon-Text-List__wrapper {
   width: 280px;
   height: 88px;
   border-bottom: rgba(31, 32, 65, 0.1) 1px solid;
@@ -800,12 +800,12 @@ input[type="radio"]:checked + label:after {
       -ms-flex-align: center;
           align-items: center;
 }
-.IconTextList__icon {
+.Icon-Text-List__icon {
   padding-left: 5px;
   padding-right: 5px;
   margin-right: 10px;
 }
-.IconTextList__text_bold {
+.Icon-Text-List__text_bold {
   font-weight: bold;
 }
 .material-icons {

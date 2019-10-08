@@ -183,6 +183,16 @@
         });
     }
     like();
+	function likeReview() {
+		var iLike = 0;
+		$('#like-btn-passive-review').on('click',function () {
+			$('#like-btn-active-review').removeClass('oll-display-none');
+			$('#like-btn-passive-review').addClass('oll-display-none');
+			var likeSum = iLike+1;
+			$('.like-btn__text1').html(likeSum);
+        });
+    }
+    likeReview();
 	function rate1() {
 		$('#rate-btn__star1').on('click',function () {
 			$(this).removeClass('fa-star-o');

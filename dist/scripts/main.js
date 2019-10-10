@@ -373,6 +373,18 @@ function moveRange (elem) {
                 indicator.innerHTML = value;
             }
             indicator.innerHTML = value +""+ "&#8381;";
+
+
+
+
+            var ggg = $(indicator).text();
+			$('.rrr').text(function (text) {
+                text = ggg;
+                return text
+            });
+
+
+
             /*Делаем цветную плашечку диапазона выбора*/
             if (f == 0) {
                 colorRange.style.left = newLeft + coords.width + "px";

@@ -1015,6 +1015,11 @@ input[type="radio"]:checked + label:after {
 .range-slider .range-slider__slider_max {
   left: 97%;
 }
+.rrr {
+  width: 50px;
+  height: 20px;
+  border: yellow 1px solid;
+}
 /*
 @import "global/mixins.less";
 @import "global/animations.less";*/

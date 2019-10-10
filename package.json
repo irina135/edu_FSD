@@ -5,7 +5,7 @@
   "author": "SergiS",
   "devDependencies": {
     "autoprefixer": "^7.2.5",
-    "browser-sync": "^2.18.13",
+    "browser-sync": "^2.26.7",
     "css-mqpacker": "^6.0.1",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
@@ -27,6 +27,8 @@
     "start": "npm run build && gulp serv"
   },
   "dependencies": {
+    "jquery": "^3.4.1",
+    "jquery-ui": "^1.12.1",
     "natives": "^1.1.6",
     "pug": "^2.0.4"
   }

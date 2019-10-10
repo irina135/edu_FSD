@@ -276,7 +276,7 @@ function moveRange (elem) {
         parent.coords = getCoords(parent.element);
 
         var block2 = {}
-        if (elem.classList.contains('block-min')) {
+        if (elem.classList.contains('range-slider__slider_min')) {
             block2.element = elem.parentElement.children[2];
             block2.coords = getCoords(block2.element);
             f = 0;

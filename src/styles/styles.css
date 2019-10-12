@@ -6,6 +6,10 @@
 * {
   box-sizing: border-box;
 }
+body {
+  padding: 0;
+  margin: 0;
+}
 p,
 h1,
 h2,
@@ -15,6 +19,9 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
+}
+a {
+  text-decoration: none;
 }
 button {
   padding: 0;
@@ -170,6 +177,13 @@ button {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
+  color: rgba(31, 32, 65, 0.5);
+}
+.text_size14-dark50 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
   color: rgba(31, 32, 65, 0.5);
 }
 .text_size14-dark25 {
@@ -660,10 +674,12 @@ input[type="radio"]:checked + label:after {
   margin-left: 2px;
 }
 .btn-click {
-  width: 99px;
-  height: 44px;
   border-radius: 22px;
   text-align: center;
+}
+.elements__btn-click_size {
+  width: 99px;
+  height: 44px;
 }
 .btn-click_background {
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
@@ -722,8 +738,9 @@ input[type="radio"]:checked + label:after {
   border-radius: 22px;
   opacity: 0.5;
 }
-.btn-click-payment-width {
+.btn-click-payment_size {
   width: 320px;
+  height: 44px;
 }
 .btn-click-payment-position {
   position: relative;
@@ -902,6 +919,100 @@ a.paginator__link,
   width: 50px;
   height: 20px;
   border: yellow 1px solid;
+}
+.header {
+  width: 100%;
+  height: 70px;
+}
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 70px;
+  margin: 0 auto;
+}
+.header__logo {
+  display: flex;
+  width: 105.5px;
+  margin-right: 20.6%;
+  align-items: center;
+}
+.header__logo-img {
+  width: 40px;
+  height: 40px;
+  margin-right: 12.5px;
+  border-radius: 20px;
+  text-align: center;
+}
+.header__logo-img_style {
+  position: relative;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  border-radius: 20px;
+}
+.header__logo-img_style::after {
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  content: '';
+  z-index: -1;
+  border-radius: 20px;
+}
+.header__logo-img-wrapper {
+  display: flex;
+  align-items: start;
+}
+.header__logo-img_left-position {
+  margin-left: 7px;
+}
+.header__nav {
+  position: relative;
+  width: 527px;
+  display: flex;
+  align-items: center;
+  height: 70px;
+  justify-content: space-between;
+}
+.header__nav-dropdown {
+  display: flex;
+  align-items: center;
+}
+.header__nav-dropdown__text {
+  line-height: 70px;
+}
+.header__nav-dropdown__icon {
+  color: rgba(31, 32, 65, 0.5);
+  line-height: 20px;
+}
+.header__btn-login_size {
+  width: 79px;
+  height: 34px;
+}
+.header__btn-register_size {
+  width: 101px;
+  height: 34px;
+}
+.header__nav_dropdown-display-none {
+  position: absolute;
+  display: block;
+  top: 30px;
+  left: 70px;
+  width: auto;
+  height: 60px;
+  border: #66d2ea 1px solid;
+}
+.header-margin-top,
+.header-margin-bottom {
+  width: 100%;
+  height: 150px;
+  background: #E5E5E5;
+}
+.header-margin-bottom {
+  height: 40px;
 }
 /*
 @import "global/mixins.less";

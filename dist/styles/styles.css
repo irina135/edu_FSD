@@ -1093,6 +1093,16 @@ a.paginator__link,
   height: 60px;
   border: #66d2ea 1px solid;
 }
+.header__nav_line {
+  width: 1px;
+  height: 30px;
+  margin-right: 30px;
+  margin-left: 30px;
+  background: rgba(31, 32, 65, 0.1);
+}
+.header__logo_logget {
+  margin-right: 24%;
+}
 .header-margin-top,
 .header-margin-bottom {
   width: 100%;

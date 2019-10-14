@@ -382,6 +382,11 @@ function moveRange (elem) {
                 text = ggg;
                 return text
             });
+			var ggg1 = $(indicator).text();
+			$('.rrrmax').text(function (text) {
+                text = ggg1;
+                return text
+            });
 
 
 

@@ -16,12 +16,17 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+ul,
+li {
   margin: 0;
   padding: 0;
 }
 a {
   text-decoration: none;
+}
+li {
+  list-style-type: none;
 }
 button {
   padding: 0;
@@ -234,6 +239,10 @@ button {
   line-height: 30px;
   font-weight: bold;
   color: #1F2041;
+}
+.footer-widgets__text {
+  width: 208px;
+  margin-bottom: 20px;
 }
 .colors_wrapper {
   width: auto;
@@ -920,9 +929,13 @@ a.paginator__link,
   height: 20px;
   border: yellow 1px solid;
 }
+.rrrmax {
+  width: 50px;
+  height: 20px;
+  border: red 1px solid;
+}
 .header {
   width: 100%;
-  height: 70px;
 }
 .header-wrapper {
   display: flex;
@@ -932,11 +945,13 @@ a.paginator__link,
   height: 70px;
   margin: 0 auto;
 }
-.header__logo {
+.header-footer__logo {
   display: flex;
   width: 105.5px;
-  margin-right: 20.6%;
   align-items: center;
+}
+.header__logo_margin {
+  margin-right: 20.6%;
 }
 .header__logo-img {
   width: 40px;
@@ -1023,6 +1038,92 @@ a.paginator__link,
 }
 .header-margin-bottom {
   height: 40px;
+}
+.header-margin-bottom-end {
+  height: 130px;
+}
+.footer-widgets {
+  width: 100%;
+}
+.footer-widgets-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 80%;
+  height: 372px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+.footer-logo-wrapper {
+  margin-right: 40px;
+}
+.header-footer__logo_footer-mardin {
+  margin-top: -4px;
+  margin-bottom: 20px;
+}
+.footer-logo__text {
+  width: 260px;
+}
+.footer-field {
+  width: 260px;
+}
+.text-footer-field_width260 {
+  width: 233px;
+}
+.footer__link {
+  margin-right: 119px;
+}
+.footer__link:last-of-type {
+  margin-right: 87px;
+}
+.footer__link ul li {
+  margin-bottom: 20px;
+}
+.footer-widgets__copyright-bar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 70px;
+  margin: 0 auto;
+}
+.Copyright {
+  text-align: left;
+}
+.footer__copyright-bar {
+  width: 100%;
+  height: 71px;
+  border-top: #E5E5E5 1px solid;
+}
+.footer__icon {
+  width: 97px;
+  text-align: right;
+}
+.footer__icon a {
+  margin-right: 20px;
+  font-size: 24px;
+  color: #BC9CFF;
+}
+.footer__icon a:last-of-type {
+  margin-right: 0;
+}
+.footer-cretive {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 110px;
+}
+.footer-creative__logo {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.footer-creative__text {
+  width: 560px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+.footer-creative__icon {
+  margin: 0 auto;
 }
 /*
 @import "global/mixins.less";

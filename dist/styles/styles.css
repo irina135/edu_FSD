@@ -1291,6 +1291,11 @@ a.paginator__link,
   top: 701px;
   left: 38.8%;
 }
+.cards-img__position {
+  position: absolute;
+  top: 559px;
+  left: 68%;
+}
 .btn-click-me-wrapper {
   position: relative;
   z-index: 20;
@@ -1335,6 +1340,51 @@ a.paginator__link,
   z-index: -1;
   border-radius: 22px;
   opacity: 0.5;
+}
+.carousel {
+  max-width: 270px;
+  /* ширина всего блока */
+  width: 100%;
+}
+.carousel-wrapper {
+  overflow: hidden;
+  /* скрываем содержимое, выходящее за рамки основной области */
+  position: relative;
+}
+.carousel-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10000px;
+  /* устанавливаем большую ширину для набора элементов */
+  position: relative;
+  /* позиционируем блок относительно основной области карусели */
+}
+.carousel-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*float: left;*/
+  /* выстраиваем все элементы карусели в ряд */
+  width: 270px;
+  /* задаём ширину каждого элемента */
+}
+.carousel-block img {
+  display: block;
+}
+.carousel-button-left a,
+.carousel-button-right a {
+  width: 25px;
+  height: 36px;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+}
+.carousel-button-left a {
+  float: left;
+}
+.carousel-button-right a {
+  float: right;
 }
 /*
 @import "global/mixins.less";

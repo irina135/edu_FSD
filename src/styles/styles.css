@@ -1155,6 +1155,7 @@ a.paginator__link,
   height: 100%;
 }
 .cards-container {
+  position: revert;
   z-index: -20;
   width: 380px;
   height: auto;
@@ -1180,6 +1181,15 @@ a.paginator__link,
 .cards-registration__position_active {
   top: 720px;
 }
+.cards-entrance__position {
+  position: absolute;
+  top: 701px;
+  left: 38.8%;
+}
+.btn-click-me-wrapper {
+  position: relative;
+  z-index: 20;
+}
 .account-wrapper {
   display: flex;
   justify-content: space-between;
@@ -1194,18 +1204,23 @@ a.paginator__link,
   font-size: 14px;
   line-height: 44px;
 }
-.card-number-selection__tittle-wrapper {
-  display: flex;
-  justify-content: start;
-  margin-bottom: 5px;
+.grounded-radiants {
+  position: relative;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  border-radius: 22px;
 }
-.card-number-selection__tittle {
-  text-align: left;
-  width: 150px;
-  margin-right: 20px;
-}
-.card-number-selection__tittle:last-of-type {
-  margin-right: 0;
+.grounded-radiants::after {
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  content: '';
+  z-index: -1;
+  border-radius: 22px;
+  opacity: 0.5;
 }
 /*
 @import "global/mixins.less";

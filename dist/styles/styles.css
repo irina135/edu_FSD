@@ -1258,8 +1258,8 @@ a.paginator__link,
   padding-top: 150px;
   height: 100%;
 }
-/*общие стили*/
 .cards-container {
+  position: revert;
   z-index: -20;
   width: 380px;
   height: auto;
@@ -1286,6 +1286,15 @@ a.paginator__link,
 .cards-registration__position_active {
   top: 720px;
 }
+.cards-entrance__position {
+  position: absolute;
+  top: 701px;
+  left: 38.8%;
+}
+.btn-click-me-wrapper {
+  position: relative;
+  z-index: 20;
+}
 .account-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1305,6 +1314,27 @@ a.paginator__link,
   font-weight: normal;
   font-size: 14px;
   line-height: 44px;
+}
+.grounded-radiants {
+  position: relative;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  border-radius: 22px;
+}
+.grounded-radiants::after {
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+  background: -webkit-linear-gradient(top, #BC9CFF 0%, #8BA4F9 100%);
+  background: -o-linear-gradient(top, #BC9CFF 0%, #8BA4F9 100%);
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  content: '';
+  z-index: -1;
+  border-radius: 22px;
+  opacity: 0.5;
 }
 /*
 @import "global/mixins.less";

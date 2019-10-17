@@ -1300,6 +1300,7 @@ a.paginator__link,
   position: relative;
   z-index: 20;
 }
+/*btn-click-me-wrapper без него не видно бордера кнопки click me*/
 .account-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1341,17 +1342,17 @@ a.paginator__link,
   border-radius: 22px;
   opacity: 0.5;
 }
-.carousel {
+.cards-img__carousel {
   max-width: 270px;
   /* ширина всего блока */
   width: 100%;
 }
-.carousel-wrapper {
+.cards-img__carousel-wrapper {
   overflow: hidden;
   /* скрываем содержимое, выходящее за рамки основной области */
   position: relative;
 }
-.carousel-items {
+.cards-img__carousel-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1360,7 +1361,7 @@ a.paginator__link,
   position: relative;
   /* позиционируем блок относительно основной области карусели */
 }
-.carousel-block {
+.cards-img__carousel-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1369,21 +1370,21 @@ a.paginator__link,
   width: 270px;
   /* задаём ширину каждого элемента */
 }
-.carousel-block img {
+.cards-img__carousel-block img {
   display: block;
 }
-.carousel-button-left a,
-.carousel-button-right a {
+.cards-img__button-left a,
+.cards-img__button-right a {
   width: 25px;
   height: 36px;
   position: relative;
   cursor: pointer;
   text-decoration: none;
 }
-.carousel-button-left a {
+.cards-img__button-left a {
   float: left;
 }
-.carousel-button-right a {
+.cards-img__button-right a {
   float: right;
 }
 /*
